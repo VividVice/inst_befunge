@@ -1,0 +1,7 @@
+FROM golang:1.19
+
+SHELL ["/bin/bash", "-c"]
+
+WORKDIR /app
+
+CMD [ "go", "build" ]

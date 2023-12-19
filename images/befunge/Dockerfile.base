@@ -1,0 +1,14 @@
+FROM python:3.8
+
+SHELL ["/bin/bash", "-c"]
+
+# Install required Python packages
+RUN pip install pyb93
+
+# Copy the Befunge Python script
+WORKDIR /app
+
+COPY src/bf_install.py /app/bf_install.py
+
+
+CMD ["python", "bf_install.py"]

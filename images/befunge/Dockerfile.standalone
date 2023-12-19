@@ -1,0 +1,14 @@
+# Use a lightweight Python image
+FROM python:3.8
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the Python script into the container
+COPY . /app
+
+# Install required Python packages
+RUN pip install pyb93
+
+# Specify the default command to run when the container starts
+CMD ["python", "bf_install.py", "main.bf"]
