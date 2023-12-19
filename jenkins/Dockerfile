@@ -13,6 +13,6 @@ ENV ADMIN_PASSWORD=test
 
 ENV CASC_JENKINS_CONFIG=/var/jenkins_home/jenkins.yml
 
-COPY ./jenkins/plugins.txt /usr/downloads/plugins.txt
+COPY plugins.txt /usr/downloads/plugins.txt
 
 RUN /usr/local/bin/install-plugins.sh < /usr/downloads/plugins.txt
