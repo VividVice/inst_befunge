@@ -16,9 +16,9 @@ RUN apt-get update && \
 ENV ADMIN_PASSWORD=test 
 
 
-COPY ./jenkins/jenkins.yml /var/jenkins_home/jenkins.yml
-COPY ./jenkins/job_dsl.groovy /var/job_dsl.groovy
-COPY ./jenkins/getLanguage.sh /var/getLanguage.sh
+COPY ./jenkins.yml /var/jenkins_home/jenkins.yml
+COPY ./job_dsl.groovy /var/job_dsl.groovy
+COPY ./getLanguage.sh /var/getLanguage.sh
 
 ENV CASC_JENKINS_CONFIG=/var/jenkins_home/jenkins.yml
 
