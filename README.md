@@ -4,6 +4,14 @@
 
 ---
 
+## Usage
+
+You can spin up the application using:
+
+```./handler/build.sh```
+
+---
+
 ## Overview
 DevOps is a collection of great notions and technologies that allows oneself to have a truly great control over the lifecycle of an application. This project, named Whanos, empowers you to combine your knowledge of various DevOps technologies, including Docker, GitHub Actions, Jenkins, Ansible, and Kubernetes, to set up a powerful infrastructure for automatic deployment.
 
@@ -32,17 +40,6 @@ Utilize Jenkins for automatic containerization and deployment. Configure Jenkins
 ## Kubernetes Cluster
 Automatically deploy applications into a Kubernetes cluster based on the presence of a whanos.yml file in the repository. The whanos.yml file specifies deployment configurations such as replicas, resources, and ports. Ensure accessibility of the application from the outside world, and support private Git repositories with documented credential handling.
 
----
-
-## Deploying Your Infrastructure
-Deploy the entire infrastructure online using an appropriate technology, with Ansible being the recommended choice. Follow best practices, ensure redeployability, and provide documentation for environment variables and commands needed for deployment.
-
----
-
-## Evaluation
-The project will be evaluated on functional aspects, adherence to best practices, and overall cleanliness of the setup. Ensure online accessibility of the infrastructure during the defense, and consider previously seen notions such as "redeployability."
-
----
 
 ## Delivery Repository Structure
 Organize your delivery repository with Dockerfiles in the 'images' directory, documentation in 'docs', and any necessary files related to Jenkins, Kubernetes, or other technologies. Include helper scripts and configuration files for easy redeployment of the infrastructure.
